@@ -1,1 +1,2 @@
 "homepage": "https://easy-choice.ru/bot/", для того, чтобы залить на сервер
+"homepage": "./",
