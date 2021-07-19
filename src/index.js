@@ -78,7 +78,9 @@ class Game extends React.Component {
 	handleClick(i) {
 		const history = this.state.history.slice(0,this.state.stepNumber+1);
 		const current = history[history.length-1];
-		let squares = current.squares.slice();
+		let squares = current.squares.map(e => {
+			return new sq(e.value,e.isRed);
+		});
 
 		let check = calculateWinner(squares);
 
