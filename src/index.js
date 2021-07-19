@@ -111,7 +111,6 @@ render() {
         <div className="game-board">
         <Board 
 					squares={current.squares}
-					isRed={current.isRed}
 					onClick={(i)=> this.handleClick(i)}
 				/>
         </div>
